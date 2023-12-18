@@ -9,5 +9,6 @@ id serial primary key,
 date varchar,
 customer_id int,
 product_name varchar,
-amount int
+amount int,
+foreign key (customer_id) references CUSTOMERS (id)
 );
